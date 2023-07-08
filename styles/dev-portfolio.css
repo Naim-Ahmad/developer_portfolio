@@ -14,6 +14,10 @@ body {
   margin: 0;
 }
 
+main section {
+  margin-top: 130px;
+}
+
 h1,
 h3 {
   margin: 0;
@@ -58,9 +62,12 @@ h3 {
 
 .description {
   color: var(--dark-03, #757575);
-  font-size: 18px;
   font-weight: 400;
   line-height: 30px;
+}
+
+.fs-18 {
+  font-size: 18px;
 }
 
 /* navbar styles */
@@ -74,12 +81,10 @@ header nav ul {
 header nav ul li {
   margin-right: 50px;
 }
-
 header nav a {
   text-decoration: none;
   color: var(--dark-02);
 }
-
 .nav-title {
   font-size: 45px;
   font-weight: 700;
@@ -92,7 +97,6 @@ header nav a {
 header {
   background-color: #fff8f3;
 }
-
 .banner {
   background-image: url('../images/header_bg.png');
   background-repeat: no-repeat;
@@ -104,7 +108,6 @@ header {
   height: 600px;
   margin-right: 50px;
 }
-
 .developer-img {
   width: 70px;
   position: absolute;
@@ -119,19 +122,16 @@ header {
 .banner-content p {
   max-width: 580px;
 }
-
 .banner-greeting {
   color: var(--dark-02);
   font-size: 45px;
   font-weight: 600;
 }
-
 .banner-title {
   color: var(--dark-01, #181818);
   font-size: 85px;
   font-weight: 700;
 }
-
 .btn-contact {
   margin-left: 1rem;
   background-color: white;
@@ -159,8 +159,20 @@ main {
 .info-description {
   margin: 0;
   font-size: 20px;
+  font-weight: bold;
 }
 
 .about-info {
   margin-top: 30px;
+}
+
+/* what i do section styles*/
+.skills-container {
+  display: flex;
+  gap: 24px;
+}
+.skill-item {
+  padding: 30px;
+  box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+  margin-top: 50px;
 }
