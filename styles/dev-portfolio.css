@@ -191,7 +191,7 @@ main {
   margin-bottom: 100px;
 }
 .resume-col-title {
-  margin-bottom: 30px;
+  margin-bottom: 35px;
 }
 .resume-col-item h2 {
   color: var(--dark-02, #474747);
@@ -212,4 +212,33 @@ main {
 .download-cv {
   text-align: center;
   margin-top: 2rem;
+  margin-bottom: 113px;
+}
+
+/* footer section styles */
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 130px 230px;
+  background-color: var(--bg-color);
+}
+
+footer .title {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.footer-col {
+  width: 50%;
+}
+
+input,
+textarea {
+  display: block;
+  margin-bottom: 20px;
+  padding: 18px 30px;
+  border: 0;
+  width: 100%;
+  max-width: 460px;
+  background-color: white;
 }
