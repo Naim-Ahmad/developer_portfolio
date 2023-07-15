@@ -141,7 +141,8 @@ header {
 }
 
 /* main section styles */
-main {
+main,
+footer > .footer-container {
   max-width: 1180px;
   margin: 0 auto;
 }
@@ -217,10 +218,13 @@ main {
 
 /* footer section styles */
 footer {
+  background-color: var(--bg-color);
+}
+.footer-container {
   display: flex;
   justify-content: space-between;
-  padding: 130px 230px;
-  background-color: var(--bg-color);
+  padding: 130px 0px;
+  gap: 40px;
 }
 
 footer .title {
@@ -238,7 +242,92 @@ textarea {
   margin-bottom: 20px;
   padding: 18px 30px;
   border: 0;
-  width: 100%;
-  max-width: 460px;
+  /* width: 100%; */
+  min-width: 87%;
   background-color: white;
+}
+
+.hide {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  main {
+    padding: 0px 30px;
+  }
+  footer {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .banner {
+    flex-direction: column-reverse;
+    background-image: none;
+  }
+  .banner-content {
+    margin-left: 10px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .skill-sec-desc,
+  .skills-container {
+    padding: 0 10px;
+  }
+  .about-info-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .skills-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .skill-item {
+    max-width: 30%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .resume-info-container,
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-col {
+    width: 100%;
+    text-align: center;
+  }
+  header ul,
+  nav {
+    flex-direction: column;
+  }
+  header ul li {
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .skills-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .about-info-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .skill-item {
+    max-width: 300px;
+  }
+  .banner-title {
+    font-size: 3.5em;
+  }
+  .btn-contact {
+    margin-top: 10px;
+    margin-left: 0px;
+  }
+  .profile-pic {
+    width: 100%;
+    height: auto;
+  }
 }
